@@ -1,0 +1,38 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #fffcf9; color: #333; }
+
+header { background: #000; color: #fff; padding: 15px 5%; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+
+.logo-container { display: flex; align-items: center; gap: 15px; }
+.main-logo { height: 65px; width: auto; border-radius: 5px; }
+h1 { font-family: 'Playfair Display', serif; font-size: 1.3rem; letter-spacing: 2px; }
+
+.nav-menu { display: flex; list-style: none; }
+.nav-menu li a { color: white; text-decoration: none; margin-left: 20px; transition: 0.3s; }
+.nav-menu li a:hover { color: #d4af37; }
+
+.hero-banner { 
+    height: 400px; 
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200');
+    background-size: cover; background-position: center;
+    display: flex; flex-direction: column; justify-content: center; align-items: center; color: white;
+}
+.hero-banner h2 { font-family: 'Playfair Display', serif; font-size: 3rem; text-align: center; }
+
+.category { padding: 60px 5%; }
+.title { text-align: center; font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 40px; }
+
+.product-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 30px; 
+}
+
+.card { background: white; padding: 15px; border-radius: 10px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+.card h3 { font-size: 1rem; margin-bottom: 5px; }
+.card p { color: #b8860b; font-weight: bold; font-size: 1.1rem; }
+
+footer { background: #000; color: #666; text-align: center; padding: 40px; margin-top: 40px; }
